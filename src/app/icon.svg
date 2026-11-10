@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#36543F"/>
+      <stop offset="1" stop-color="#2A4334"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="116" fill="url(#bg)"/>
+  <g fill="#F6F1E7">
+    <!-- thin left stem -->
+    <rect x="150" y="146" width="18" height="226"/>
+    <!-- thick diagonal -->
+    <polygon points="150,146 204,146 362,372 308,372"/>
+    <!-- thin right stem -->
+    <rect x="344" y="146" width="18" height="214"/>
+    <!-- serifs -->
+    <rect x="122" y="140" width="82" height="10" rx="3"/>
+    <rect x="122" y="366" width="74" height="10" rx="3"/>
+    <rect x="316" y="140" width="74" height="10" rx="3"/>
+  </g>
+  <!-- coin -->
+  <circle cx="392" cy="372" r="30" fill="#F2CDD3"/>
+  <circle cx="392" cy="372" r="19" fill="none" stroke="#2F4A3A" stroke-width="4" opacity="0.55"/>
+  <!-- subtle rising line -->
+  <path d="M112 420 C 190 420, 230 404, 300 404 S 360 396, 358 396" fill="none" stroke="#A9BFA3" stroke-width="6" stroke-linecap="round" opacity="0.7"/>
+</svg>

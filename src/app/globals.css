@@ -3,6 +3,7 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
+  color-scheme: only light;
   --cream: #faf6ef;
   --cream-deep: #f3ece0;
   --card: #fffdf9;

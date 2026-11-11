@@ -12,6 +12,8 @@ export const metadata: Metadata = {
   applicationName: "Noy's moneyyyyyy",
   appleWebApp: { capable: true, title: "Noy's money", statusBarStyle: "default" },
   formatDetection: { telephone: false },
+  // Personal finance app: keep every deployment out of search engines.
+  robots: { index: false, follow: false },
 };
 
 export const viewport: Viewport = {
@@ -19,6 +21,8 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   viewportFit: "cover",
+  // The palette is designed for light mode; stop browsers (e.g. Samsung Internet) from force-darkening it.
+  colorScheme: "only light",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

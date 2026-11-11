@@ -160,7 +160,7 @@ export default function WhatIfPage() {
             </div>
             <div className="space-y-3">
               <AmountInput size="md" value={item.amount} onChange={(v) => update(item.key, { amount: v })} autoFocus={idx === 0 && !item.amount} />
-              <div className="grid grid-cols-2 gap-2">
+              <div className="grid grid-cols-1 gap-2 min-[400px]:grid-cols-2">
                 <Input placeholder="מה? (למשל תכשיטים)" value={item.description} onChange={(e) => update(item.key, { description: e.target.value })} aria-label="תיאור" />
                 <NativeSelect value={item.category_id} onChange={(e) => update(item.key, { category_id: e.target.value })} aria-label="קטגוריה">
                   {categories.map((c) => (

@@ -81,6 +81,15 @@ npm run build && npm start
 
 ## Deploy to Vercel
 
+### Local-mode preview (no Supabase)
+
+Deploy with **no environment variables at all**. The app detects that Supabase isn't configured and runs in local mode:
+every visitor's data stays in their own browser, nothing is shared or sent to a server, and the
+"מצב מקומי" banner is shown on every screen. Search engines are told not to index the site (`noindex`).
+Activating the cloud later only requires adding the two variables below and redeploying.
+
+### With Supabase
+
 1. Push the repository to GitHub and import it in Vercel (framework preset: Next.js; defaults are fine).
 2. Add `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY` under *Project → Settings → Environment Variables* (Production + Preview).
 3. Deploy. Then add the production URL (and `/reset-password`) to Supabase *Redirect URLs* and set it as the *Site URL*.
